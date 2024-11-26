@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comming Soon </title>
+    <style>
+        /* Font-imports */
+        @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        /* StyleSheet:Start */
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            overflow-y: hidden;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+            background: url("./assets/img/soon.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container {
+            height: 100vh;
+            width: 400px;
+            padding: 10px;
+            text-align: center;
+            backdrop-filter: blur(5px) brightness(60%);
+        }
+
+        .content {
+            margin: 30px 0px;
+        }
+
+        .company {
+            font-size: 32px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            margin-bottom: 50px;
+        }
+
+        .title {
+            font-size: 62px;
+            font-family: 'Bacasime Antique', serif;
+            margin-bottom: 15px;
+        }
+
+        .discription {
+            font-size: 16px;
+            line-height: 20px;
+            width: 300px;
+            margin: 0 auto 30px;
+        }
+
+        .button button {
+            width: 150px;
+            height: 40px;
+            border-radius: 20px;
+            background: transparent;
+            border: 2px solid #faf5f5;
+            font-weight: bolder;
+        }
+
+        .button button:hover {
+            background: #fff;
+            color: #000;
+            transition: 0.5s;
+        }
+        .button button:hover a{
+            color: black;
+        }
+        .icons {
+            margin-top: 50px;
+        }
+
+        .icons button {
+            background: transparent;
+            border: none;
+            width: 50px;
+            font-size: 1.5em;
+            border-radius: 50%;
+        }
+
+        .icons button ion-icon {
+            padding: 10px;
+        }
+
+        .icons button:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transition: 0.5s;
+        }
+
+        /* StyleSheet:End */
+        /* Responsiveness:Start */
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            .company {
+                font-size: 0.6em;
+            }
+
+            .title {
+                font-size: 4em;
+            }
+
+            .discription {
+                font-size: 0.7em;
+            }
+        }
+
+        /* Responsiveness:End */
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="content">
+                <div class="company">
+                    <p>Amicis</p>
+                    <p>Industries</p>
+                </div>
+
+                <h1 class="title">Launching soon!</h1>
+
+                <div class="discription">
+                    <p>
+                        Amicis-Industries specializes in animal health, providing high-quality
+                        vaccines and medicines to safeguard livestock and pets. Dedicated to
+                        innovation and care, Amics supports veterinarians and farmers with effective
+                        solutions for animal well-being and disease prevention.
+                    </p>
+                </div>
+
+                <div class="button">
+                    <button type="button"><a href="index.html" class="" style="text-decoration: none;">Back To Home</a></button>
+                </div>
+
+                <div class="icons">
+                    <button><ion-icon name="logo-facebook"></ion-icon></button>
+                    <button><ion-icon name="logo-instagram"></ion-icon></button>
+                    <button><ion-icon name="logo-twitter"></ion-icon></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for icons:Start -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- JS for icons:End -->
+</body>
+
+</html>

@@ -163,10 +163,12 @@
 	margin-top: 20px;
 }
 .offcanvas-contact .number {
-	font-size: 28px;
+	/* font-size: 28px; */
+	font-size: 16px;
+
 }
 .offcanvas-contact .email {
-	font-size: 28px;
+	font-size: 16px;
 }
 
 .brand-area {
@@ -189,7 +191,7 @@
 }
 .formula-bg {
 	/* padding: 115px 0 120px; */
-	padding: 60px 0 60px;
+	padding: 10px 0 60px;
 
 }
 .pricing-area {

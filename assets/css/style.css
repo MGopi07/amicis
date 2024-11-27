@@ -381,7 +381,9 @@ label {
 	justify-content: flex-start;
 }
 .logo img {
-	max-width: 160px;
+	/* max-width: 160px; */
+	max-width: 200px;
+
 }
 .navbar-wrap {
 	display: flex;
@@ -4849,7 +4851,7 @@ body.search-visible {
 
 /* 5. Banner */
 .tg-banner-area.banner-bg {
-	background-image: url(../img/banner/tg_banner_bg.jpg);
+	background-image: url(../img/banner/tg_banner_bg.jpeg);
 	background-position: bottom center;
 	background-size: cover;
 	padding: 140px 0 230px;
@@ -7566,7 +7568,7 @@ margin-bottom: 15px !important;
 }
 .elementor-widget-container{
     font-size: 18px;
-    font-weight: 300;
+    /* font-weight: 300; */
     /* font-style: italic; */
     line-height: 2em;
     letter-spacing: 0px;
@@ -7574,9 +7576,16 @@ margin-bottom: 15px !important;
 .why_we_are_best li{
 	list-style: none;
 	margin-bottom: 10px;
+	/* font-size: 18px; */
+
+}
+.our_mission_content{
+	font-size: 18px;
 }
 .our_mission li{
  margin-bottom: 5px;
+ font-size: 18px;
+
 }
 .our_core_value{
 	margin-bottom: 10px;
@@ -7586,9 +7595,9 @@ margin-bottom: 15px !important;
 	margin-top: 20px;
 }
 .our_vision{
-	font-size: 16px;
-    font-weight: 300;
-    line-height: 2em;
+	font-size: 18px;
+    /* font-weight: 300; */
+    line-height: 35px;
     letter-spacing: 0px;
 }
 .elementor-widget-container p{
@@ -7605,3 +7614,25 @@ margin-bottom: 15px !important;
 	justify-content: center;
 	margin-left: auto;
 }
+.home_banner_tittle{
+	font-size: 36px !important;
+}
+svg {
+	width: 30%;
+	/* margin: 0 auto; */
+	/* margin-bottom: 20px; */
+  }
+  
+  #hex {
+	stroke-width: 2;
+	/* stroke: red; */
+  }
+  .ask_your_doctor{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px !important;
+	font-size: 24px;
+	font-weight: 600;
+
+  }

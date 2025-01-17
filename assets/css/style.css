@@ -1380,6 +1380,17 @@ body.search-visible {
 	background-repeat: repeat-x;
 	background-position: center;
 }
+.features-bg.water-bg::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: -41px;
+	width: 100%;
+	height: 41px;
+	background-image: url(../img/bg/water-top.png);
+	background-repeat: repeat-x;
+	background-position: center;
+}
 .features-bg::after {
 	content: "";
 	position: absolute;
@@ -1388,6 +1399,17 @@ body.search-visible {
 	width: 100%;
 	height: 50px;
 	background-image: url(../img/bg/features_shape02.png);
+	background-repeat: repeat-x;
+	background-position: center;
+}
+.features-bg.water-bg::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -50px;
+	width: 100%;
+	height: 50px;
+	background-image: url(../img/bg/water-bottom.png);
 	background-repeat: repeat-x;
 	background-position: center;
 }
@@ -4619,7 +4641,9 @@ body.search-visible {
 	opacity: .7;
 }
 .footer-contact-wrap .list-wrap {
-	margin: 30px 0 0;
+	/* margin: 30px 0 0; */
+	margin: 20px 0 0;
+
 }
 .footer-contact-wrap .list-wrap li {
     color: var(--tg-white);
@@ -7618,7 +7642,8 @@ margin-bottom: 15px !important;
 	font-size: 36px !important;
 }
 svg {
-	width: 30%;
+	/* width: 30%; */
+	width: 40%;
 	/* margin: 0 auto; */
 	/* margin-bottom: 20px; */
   }
@@ -7635,4 +7660,8 @@ svg {
 	font-size: 24px;
 	font-weight: 600;
 
+  }
+  .features-content p{
+	font-size: 16px;
+	font-weight: 600;
   }

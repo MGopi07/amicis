@@ -1,0 +1,830 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Water-Treatment</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- <link rel="stylesheet" href="assets/css/singleproduct.css"> -->
+    <style>
+        .tg-banner-area::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: -moz-linear-gradient(5deg, rgb(148, 190, 38) 0%, rgb(98, 175, 33) 100%);
+            background-image: -webkit-linear-gradient(5deg, #5c6bc09c 0%, #C5CAE9 100%) !important;
+            background-image: -ms-linear-gradient(5deg, rgb(148, 190, 38) 0%, rgb(98, 175, 33) 100%);
+            opacity: .87;
+            z-index: -1;
+        }
+
+        .testimonial-overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #3374b8;
+            opacity: 1;
+            z-index: -1;
+        }
+
+        .testimonial-item {
+            background: rgb(255, 255, 255);
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: rgba(50, 50, 93, 0.548) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .testimonial-item p {
+            color: black;
+            font-style: normal !important;
+        }
+
+        .features-icon::after {
+            content: "";
+            position: absolute;
+            left: 20px;
+            top: 5px;
+            width: 40px;
+            height: 40px;
+            background: #3374b8 !important;
+            border-radius: 50%;
+            z-index: -1;
+            transition: .4s linear;
+        }
+
+        .btn {
+
+
+            font-size: 12px;
+            font-weight: 600;
+            padding: 15px 40px;
+            background-color: #3374b7 !important;
+
+        }
+
+        .testimonial-bg::before {
+            background: url(./assets/img/bg/testimonial_top_shapeone.png) !important;
+            content: "";
+            width: 100%;
+            height: 33px;
+            background-repeat: repeat;
+
+        }
+
+        .footer-top-wrap {
+            background: #3374b8 !important;
+            position: relative;
+            padding: 195px 0 30px;
+            overflow-x: hidden;
+            z-index: 1;
+        }
+
+        .copyright-wrap {
+            background: #3374b8 !important;
+            border-top: 1px solid #3374b8 !important;
+            padding: 25px 0;
+        }
+
+        .scroll-top {
+            background-color: black !important;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff !important;
+            border-radius: 50%;
+            color: #000000 !important;
+        }
+
+        .footer-contact-wrap .list-wrap li i {
+            color: #000000 !important;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .header-action>ul li.offCanvas-btn a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            background: #3374b8 !important;
+            color: var(--tg-white) !important;
+            border-radius: 50%;
+            font-size: 25px;
+        }
+
+        .tg-menu-area .navbar-wrap>ul>li.active>a,
+        .tg-menu-area .navbar-wrap>ul>li:hover>a {
+            color: #3374b8 !important;
+        }
+
+        .tg-menu-area.menu-area .mobile-nav-toggler {
+            background-image: -moz-linear-gradient(5deg, rgb(51 116 184) 0%, rgb(131 148 217) 100%) !important;
+            background-image: -webkit-linear-gradient(5deg, rgb(51 116 184) 0%, rgb(131 148 217) 100%) !important;
+            background-image: -ms-linear-gradient(5deg, rgb(51 116 184) 0%, rgb(131 148 217) 100%);
+        }
+
+
+        .breadcrumb-bg {
+            background-image: url(/assets/img/bg/water-treatment-bg.png) !important;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            padding: 230px 0 150px;
+            z-index: 1;
+        }
+
+        .breadcrumb-bg::before {
+
+            opacity: 0.7 !important;
+        }
+
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+
+            .btn {
+                font-size: 12px !important;
+                font-weight: 600;
+                padding: 10px 30px !important;
+
+            }
+        }
+    </style>
+    <style>
+        .product-card {
+            transition: all 0.3s ease;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            /* transform: translateY(-5px); */
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+
+        }
+
+        .product-image {
+            transition: all 0.5s ease;
+            /* height: 300px; */
+            object-fit: cover;
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+
+        .badge-custom {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 2;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .btn-custom {
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            transform: translateX(5px);
+            box-shadow: -5px 5px 15px rgba(46, 204, 113, 0.3);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Pre-loader-start -->
+    <div id="preloader">
+        <div class="tg-cube-grid">
+            <div class="tg-cube tg-cube1"></div>
+            <div class="tg-cube tg-cube2"></div>
+            <div class="tg-cube tg-cube3"></div>
+            <div class="tg-cube tg-cube4"></div>
+            <div class="tg-cube tg-cube5"></div>
+            <div class="tg-cube tg-cube6"></div>
+            <div class="tg-cube tg-cube7"></div>
+            <div class="tg-cube tg-cube8"></div>
+            <div class="tg-cube tg-cube9"></div>
+        </div>
+    </div>
+    <!-- Pre-loader-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll-top scroll-to-target" data-target="html">
+        <i class="fas fa-angle-up"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+    <header id="home">
+        <div id="header-top-fixed"></div>
+        <div id="sticky-header" class="tg-menu-area menu-area">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mobile-nav-toggler"><i class="flaticon-layout"></i></div>
+                        <div class="menu-wrap">
+                            <nav class="menu-nav">
+                                <div class="logo">
+                                    <a href="water-treatment.html">
+                                        <img src="assets/img/logo/logo.png" alt="Logo" class="secondary-logo">
+                                    </a>
+                                </div>
+                                <div class="navbar-wrap main-menu d-none d-xl-flex">
+                                    <ul class="navigation">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about-water.html">About Us</a></li>
+                                        <li><a href="lanching_soon.html">Features</a></li>
+                                        <li class="active"><a href="product-water.html">Product</a></li>
+                                        <!-- <li><a href="lanching_soon.html">Ingredient</a></li> -->
+                                        <li><a href="lanching_soon.html">Our Shop</a></li>
+
+                                        <li><a href="contact.html">contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-action d-none d-sm-block">
+                                    <ul>
+
+                                        <li class="offCanvas-btn d-none d-xl-block"><a href="#"
+                                                class="navSidebar-button"><i class="flaticon-layout"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <nav class="menu-box">
+                <div class="close-btn"><i class="fas fa-times"></i></div>
+                <div class="nav-logo">
+                    <a href="water-treatment.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                </div>
+                <div class="menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="menu-backdrop"></div>
+        <!-- End Mobile Menu -->
+
+        <!-- header-search -->
+        <div class="search-popup-wrap" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="search-wrap text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="search-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Enter your keyword...">
+                                    <button class="search-btn"><i class="flaticon-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-backdrop"></div>
+        <!-- header-search-end -->
+
+        <!-- offCanvas-start -->
+        <div class="offCanvas-wrap">
+            <div class="offCanvas-toggle"><img src="assets/img/icons/close.png" alt="icon"></div>
+            <div class="offCanvas-body">
+                <div class="offCanvas-content">
+                    <h5 class="title">Get all the products from <span>Amicis Industries</span> as needed.</h5>
+                    <p>Amicis-Industries specializes in animal health, providing high-quality
+                        vaccines and medicines to safeguard livestock and pets. Dedicated to
+                        innovation and care, Amics supports veterinarians and farmers with effective
+                        solutions for animal well-being and disease prevention.</p>
+                </div>
+                <div class="offcanvas-contact">
+                    <h6 class="number">+91 9363634505 <br>
+                        +91 9500455055</h6>
+                    <h6 class="email">SUPPORT@AMICISINDUSTRIES.COM,<br>
+                        AMICISINDUSTRIES@GMAIL.COM</h6>
+                    <p>NO.2/112, <br>BAZAAR STREET, <br>
+                        PONDICHERRY,INDIA-605 502.
+                    </p>
+                    <ul class="offcanvas-social list-wrap">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="offCanvas-overlay"></div>
+        <!-- offCanvas-end -->
+
+    </header>
+    <!-- header-area-end -->
+
+
+    <!-- main-area -->
+    <main class="main-area fix">
+
+
+
+        <!-- breadcrumb-area -->
+        <section class="breadcrumb-area breadcrumb-bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="breadcrumb-content text-center">
+                            <h3 class="text-white mb-4">Product One</h3>
+                            <nav aria-label="Breadcrumbs" class="breadcrumb-trail">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item trail-item trail-begin">
+                                        <a href="index.html"><span>Home</span></a>
+                                    </li>
+                                    <li class="breadcrumb-item trail-item trail-end"><span>Products</span></li>
+                                    <li class="breadcrumb-item trail-item trail-end"><span>Product One</span></li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb-area-end -->
+
+        <!---single product start-->
+        <section class="inner-shop-details-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="inner-shop-details-flex-wrap">
+                            <div class="inner-shop-details-img-wrap">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane show active" id="item-one" role="tabpanel"
+                                        aria-labelledby="item-one-tab">
+                                        <div class="inner-shop-details-img">
+                                            <img src="assets/img/Poultrydemo.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <!-- <div class="tab-pane" id="item-two" role="tabpanel" aria-labelledby="item-two-tab">
+                                        <div class="inner-shop-details-img">
+                                            <img src="assets/img/products/shop-details-thumb02.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="item-three" role="tabpanel"
+                                        aria-labelledby="item-three-tab">
+                                        <div class="inner-shop-details-img">
+                                            <img src="assets/img/products/shop-details-thumb03.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="item-four" role="tabpanel"
+                                        aria-labelledby="item-four-tab">
+                                        <div class="inner-shop-details-img">
+                                            <img src="assets/img/products/shop-details-thumb04.png" alt="img">
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- <div class="inner-shop-details-nav-wrap">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a href="#" class="nav-link active" id="item-one-tab" data-bs-toggle="tab"
+                                            data-bs-target="#item-one" role="tab" aria-controls="item-one"
+                                            aria-selected="true"><img src="assets/img/products/shop-details-thumb01.png"
+                                                alt=""></a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a href="#" class="nav-link" id="item-two-tab" data-bs-toggle="tab"
+                                            data-bs-target="#item-two" role="tab" aria-controls="item-two"
+                                            aria-selected="false"><img
+                                                src="assets/img/products/shop-details-thumb02.png" alt=""></a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a href="#" class="nav-link" id="item-three-tab" data-bs-toggle="tab"
+                                            data-bs-target="#item-three" role="tab" aria-controls="item-three"
+                                            aria-selected="false"><img
+                                                src="assets/img/products/shop-details-thumb03.png" alt=""></a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a href="#" class="nav-link" id="item-four-tab" data-bs-toggle="tab"
+                                            data-bs-target="#item-four" role="tab" aria-controls="item-four"
+                                            aria-selected="false"><img
+                                                src="assets/img/products/shop-details-thumb04.png" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="inner-shop-details-content">
+                            <h4 class="title"> Product Title</h4>
+                            <div class="inner-shop-details-meta">
+                                <ul class="list-wrap">
+                                    <li>Brands : <a href="shop.html">Demo one</a></li>
+                                    <li class="inner-shop-details-review">
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span>(4.5)</span>
+                                    </li>
+                                    <!-- <li>ID : <span>QZX8VGH</span></li> -->
+                                </ul>
+                            </div>
+                            <!-- <div class="inner-shop-details-price">
+                                <h2 class="price">$29.99</h2>
+                                <h5 class="stock-status">- IN Stock</h5>
+                            </div> -->
+                            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur
+                                tempore a voluptatem repellendus ipsa nam necessitatibus fugit, cupiditate saepe?
+                                Aperiam, culpa! Sed alias, consequatur pariatur aspernatur hic officiis odit.</p>
+                            <div class="inner-shop-details-list">
+                                <ul class="list-wrap">
+                                    <li>Type : <span>Medicence</span></li>
+                                    <!-- <li>XPD : <span>19 Dec 2024</span></li>
+                                    <li>CO : <span>Suxnix</span></li> -->
+                                </ul>
+                            </div>
+                            <!-- <div class="inner-shop-perched-info">
+                                <div class="sd-cart-wrap">
+                                    <form action="#">
+                                        <div class="quickview-cart-plus-minus">
+                                            <input type="text" value="1">
+                                            <div class="dec qtybutton">-</div>
+                                            <div class="inc qtybutton">+</div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <a href="cart.html" class="cart-btn">add to cart</a>
+                                <a href="shop-details.html" class="wishlist-btn" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Wishlist"><i class="far fa-heart"></i></a>
+                            </div> -->
+                            <!-- <div class="inner-shop-details-bottom">
+                                <span><span>Tag : <a href="#">Natural Vitamin</a></span></span>
+                                <span>
+                                    <span>Categories :
+                                        <a href="#">Vitamin</a>
+                                        <a href="#">Protein</a>
+                                        <a href="#">Capsule</a>
+                                        <a href="#">Powder</a></span>
+                                </span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="product-desc-wrap">
+                            <ul class="nav nav-tabs" id="myTabTwo" role="tablist">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                                        data-bs-target="#description" role="tab" aria-controls="description"
+                                        aria-selected="true">Description</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" id="information-tab" data-bs-toggle="tab"
+                                        data-bs-target="#information" role="tab" aria-controls="information"
+                                        aria-selected="false">Additional information</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" id="review-tab" data-bs-toggle="tab"
+                                        data-bs-target="#review" role="tab" aria-controls="review"
+                                        aria-selected="false">Reviews (3)</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContentTwo">
+                                <div class="tab-pane fade active show" id="description" role="tabpanel"
+                                    aria-labelledby="description-tab">
+                                    <div class="product-desc-content">
+                                        <h4 class="title">The true strength of Suxnix :</h4>
+                                        <p>Whey Protein Isolates (WPIs) are the purest form of whey protein that
+                                            currently exists. WPIs are costly to use, but rate among the best proteins
+                                            that money can buy. That’s why they’re the first ingredient you read on the
+                                            Gold Standard 100% Whey™ label. By using WPI as the primary ingredient along
+                                            with premium ultra-filtered whey protein concentrate (WPC), we’re able to
+                                            pack 24 grams of protein into every serving to support your muscle building
+                                            needs after training. ON’attention to detail also extends to mixability.
+                                            This superior quality powder has been instantized to mix easliy using a
+                                            shaker cup or just a glass and spoon. There’s no doubt that this is the
+                                            standard by which all other whey proteins are measured.</p>
+                                        <h4 class="title">Suxnix the basics :</h4>
+                                        <ul class="product-desc-list list-wrap">
+                                            <li>82% Protein by Weight (24g of Protein Per 31.5g Serving Size).</li>
+                                            <li>Whey Protein Isolates (WPI) Main Ingredient.</li>
+                                            <li>Whey Protein Micro-functions from Whey Protein Isolate and
+                                                Ultra-Filtered Whey Protein Concentrate.</li>
+                                            <li>Over 4g of Naturally Occurring Glutamine &amp; Glutamic Acid in Each
+                                                Serving.</li>
+                                            <li>More than 5g of the Naturally Occurring Branched Chain Amino Acids
+                                                (BCAAs) Leucine, Isoleucine, and Valine in Each Serving.</li>
+                                            <li>The “Gold Standard” for Protein Quality.</li>
+                                            <li>Banned Substance Tested Protein</li>
+                                            <li>French Vanilla Creme Flavored Whey Protein Powder</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="information" role="tabpanel"
+                                    aria-labelledby="information-tab">
+                                    <div class="product-desc-content">
+                                        <table class="table table-sm">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Calories</th>
+                                                    <td>110</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Total Fat</th>
+                                                    <td>1kg</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Saturated Fat</th>
+                                                    <td>0.5g</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Cholesterol</th>
+                                                    <td>40mg</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Total Carbohydrate</th>
+                                                    <td>2g</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Protein</th>
+                                                    <td>24g</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Total Sugars</th>
+                                                    <td>2g</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Sodium</th>
+                                                    <td>100mg</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Calcium</th>
+                                                    <td>140 mg</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Potassium</th>
+                                                    <td>160 mg</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                                    <div class="product-desc-content">
+                                        <div class="reviews-comment">
+                                            <div class="review-info">
+                                                <div class="review-img">
+                                                    <img src="assets/img/others/p_review_img01.jpg" alt="">
+                                                </div>
+                                                <div class="review-content">
+                                                    <ul class="review-rating list-wrap">
+                                                        <li>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="review-meta">
+                                                        <h6>Chenai Simon <span>-May 12, 2024</span></h6>
+                                                    </div>
+                                                    <p>There are many variations of passages of lorem ipsum available,
+                                                        but the majority have suffered alteration in some form, by
+                                                        injected humour, or randomised words which don’t look even
+                                                        slightly believable. If you are going to use a passage of lorem
+                                                        ipsum.</p>
+                                                </div>
+                                            </div>
+                                            <div class="review-info">
+                                                <div class="review-img">
+                                                    <img src="assets/img/others/p_review_img02.jpg" alt="">
+                                                </div>
+                                                <div class="review-content">
+                                                    <ul class="review-rating list-wrap">
+                                                        <li>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="review-meta">
+                                                        <h6>Finn Castaneda <span>-June 17, 2024</span></h6>
+                                                    </div>
+                                                    <p>There are many variations of passages of lorem ipsum available,
+                                                        but the majority have suffered alteration in some form, by
+                                                        injected humour, or randomised words which don’t look even
+                                                        slightly believable. If you are going to use a passage of lorem
+                                                        ipsum.</p>
+                                                </div>
+                                            </div>
+                                            <div class="review-info">
+                                                <div class="review-img">
+                                                    <img src="assets/img/others/p_review_img03.jpg" alt="">
+                                                </div>
+                                                <div class="review-content">
+                                                    <ul class="review-rating list-wrap">
+                                                        <li>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="review-meta">
+                                                        <h6>Bayley Robertson <span>-May 28, 2024</span></h6>
+                                                    </div>
+                                                    <p>There are many variations of passages of lorem ipsum available,
+                                                        but the majority have suffered alteration in some form, by
+                                                        injected humour, or randomised words which don’t look even
+                                                        slightly believable. If you are going to use a passage of lorem
+                                                        ipsum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------end-------->
+
+    </main>
+    <!-- main-area-end -->
+
+
+    <!-- Footer-area -->
+    <footer class="footer-area">
+
+        <div class="footer-top-wrap">
+            <div class="container">
+                <div class="footer-widgets-wrap">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-7">
+                            <div class="footer-widget">
+                                <div class="footer-about">
+                                    <div class="footer-logo logo">
+                                        <a href="index.html"><img src="assets/img/logo/white_logo one.png"
+                                                alt="Logo"></a>
+                                    </div>
+                                    <div class="footer-text">
+                                        <p>Our team of experienced engineers and project managers ensure we provide a
+                                            system that is exactly suited to your requirements. Scotmas has a continued
+                                            commitment to R&D and active partnerships with several academic
+                                            institutions. You can be assured that our ClO2 systems use the latest
+                                            technology on the market.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-5 col-sm-6">
+                            <div class="footer-widget footer_widget_support">
+                                <h4 class="fw-title">Support</h4>
+                                <ul class="list-wrap">
+                                    <li><a href="#">Knowledge Base</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5">
+                            <div class="footer-widget">
+                                <h4 class="fw-title">CONTACT US</h4>
+                                <div class="footer-contact-wrap">
+                                    <p class="p-0 m-0">NO.2/112, Bazaar Street, <br>
+                                        Pondicherry,India-605 502.</p>
+                                    <ul class="list-wrap">
+                                        <li class="phone"><i class="fas fa-phone"></i> +91 9363634505 <br>
+                                            +91 9500455055</li>
+                                        <li class="mail"><i class="fas fa-envelope"></i> support@amicisindustries.com
+                                        </li>
+                                        <li class="website"><i class="fas fa-globe"></i> amicisindustries@gmail.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="footer-shape one">
+                <img src="assets/img/others/footer_shape01.png" alt="img" class="wow fadeInLeft" data-wow-delay=".3s"
+                    data-wow-duration="1s">
+            </div>
+            <div class="footer-shape two">
+                <img src="assets/img/others/footer_shape02.png" alt="img" class="wow fadeInRight" data-wow-delay=".3s"
+                    data-wow-duration="1s">
+            </div> -->
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="copyright-text text-center">
+                            <p>Copyright © 2024 Amicis-Industries All Rights Reserved.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer-area-end -->
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.paroller.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.min.js"></script>
+    <script src="assets/js/jquery.inview.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/svg-inject.min.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/validator.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        SVGInject(document.querySelectorAll("img.injectable"));
+    </script>
+</body>
+
+
+</html>

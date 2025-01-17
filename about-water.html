@@ -1,0 +1,593 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Amicis About-us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        .tg-banner-area::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: -moz-linear-gradient(5deg, rgb(148, 190, 38) 0%, rgb(98, 175, 33) 100%);
+            background-image: -webkit-linear-gradient(5deg, #5c6bc09c 0%, #C5CAE9 100%) !important;
+            background-image: -ms-linear-gradient(5deg, rgb(148, 190, 38) 0%, rgb(98, 175, 33) 100%);
+            opacity: .87;
+            z-index: -1;
+        }
+
+        .testimonial-overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #3374b8;
+            opacity: 1;
+            z-index: -1;
+        }
+
+        .testimonial-item {
+            background: rgb(255, 255, 255);
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: rgba(50, 50, 93, 0.548) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .testimonial-item p {
+            color: black;
+            font-style: normal !important;
+        }
+
+        .features-icon::after {
+            content: "";
+            position: absolute;
+            left: 20px;
+            top: 5px;
+            width: 40px;
+            height: 40px;
+            background: #3374b8 !important;
+            border-radius: 50%;
+            z-index: -1;
+            transition: .4s linear;
+        }
+
+        .btn {
+
+
+            font-size: 12px;
+            font-weight: 600;
+            padding: 15px 40px;
+            background-color: #3374b7 !important;
+
+        }
+
+        .testimonial-bg::before {
+            background: url(..//assets/img/bg/testimonial_top_shapeone.png) !important;
+            content: "";
+            width: 100%;
+            height: 33px;
+            background-repeat: repeat;
+
+        }
+
+        .footer-top-wrap {
+            background: #3374b8 !important;
+            position: relative;
+            padding: 195px 0 30px;
+            overflow-x: hidden;
+            z-index: 1;
+        }
+
+        .copyright-wrap {
+            background: #3374b8 !important;
+            border-top: 1px solid #3374b8 !important;
+            padding: 25px 0;
+        }
+
+        .scroll-top {
+            background-color: black !important;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff !important;
+            border-radius: 50%;
+            color: #000000 !important;
+        }
+
+        .footer-contact-wrap .list-wrap li i {
+            color: #000000 !important;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .header-action>ul li.offCanvas-btn a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            background: #3374b8 !important;
+            color: var(--tg-white) !important;
+            border-radius: 50%;
+            font-size: 25px;
+        }
+
+        .tg-menu-area .navbar-wrap>ul>li.active>a,
+        .tg-menu-area .navbar-wrap>ul>li:hover>a {
+            color: #3374b8 !important;
+        }
+
+        .tg-menu-area.menu-area .mobile-nav-toggler {
+            background-image: -moz-linear-gradient(5deg, rgb(51 116 184) 0%, rgb(131 148 217) 100%) !important;
+            background-image: -webkit-linear-gradient(5deg, rgb(51 116 184) 0%, rgb(131 148 217) 100%) !important;
+            background-image: -ms-linear-gradient(5deg, rgb(51 116 184) 0%, rgb(131 148 217) 100%);
+        }
+
+
+        .breadcrumb-bg {
+            background-image: url(./assets/img/bg/water-about-bg.png) !important;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            padding: 230px 0 150px;
+            z-index: 1;
+        }
+
+        .breadcrumb-bg::before {
+
+            opacity: 0.7 !important;
+        }
+
+        .title.about-title {
+            color: #185297 !important;
+        }
+
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+
+            .btn {
+                font-size: 12px !important;
+                font-weight: 600;
+                padding: 10px 30px !important;
+
+            }
+        }
+        .tg-cube-grid .tg-cube {
+            width: 33%;
+            height: 33%;
+            background-color: #3374b8 !important;
+            float: left;
+            -webkit-animation: tg-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: tg-cubeGridScaleDelay 1.3s infinite ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Pre-loader-start -->
+    <div id="preloader">
+        <div class="tg-cube-grid">
+            <div class="tg-cube tg-cube1"></div>
+            <div class="tg-cube tg-cube2"></div>
+            <div class="tg-cube tg-cube3"></div>
+            <div class="tg-cube tg-cube4"></div>
+            <div class="tg-cube tg-cube5"></div>
+            <div class="tg-cube tg-cube6"></div>
+            <div class="tg-cube tg-cube7"></div>
+            <div class="tg-cube tg-cube8"></div>
+            <div class="tg-cube tg-cube9"></div>
+        </div>
+    </div>
+    <!-- Pre-loader-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll-top scroll-to-target" data-target="html">
+        <i class="fas fa-angle-up"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+    <header id="home">
+        <div id="header-top-fixed"></div>
+        <div id="sticky-header" class="tg-menu-area menu-area">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mobile-nav-toggler"><i class="flaticon-layout"></i></div>
+                        <div class="menu-wrap">
+                            <nav class="menu-nav">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="assets/img/logo/logo-new.png" alt="Logo" class="secondary-logo">
+                                    </a>
+                                </div>
+                                <div class="navbar-wrap main-menu d-none d-xl-flex">
+                                    <ul class="navigation">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li class="active"><a href="about-water.html">About Us</a></li>
+                                        <li><a href="lanching_soon.html">Features</a></li>
+                                        <li><a href="product-water.html">Product</a></li>
+                                        <!-- <li><a href="lanching_soon.html">Ingredient</a></li> -->
+                                        <li><a href="lanching_soon.html">Our Shop</a></li>
+
+                                        <li><a href="contact-water.html">contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-action d-none d-sm-block">
+                                    <ul>
+                                        
+                                        <!-- <li class="header-search"><a href="#"><i class="flaticon-search"></i></a></li> -->
+                                        <li class="offCanvas-btn d-none d-xl-block"><a href="#"
+                                                class="navSidebar-button"><i class="flaticon-layout"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <nav class="menu-box">
+                <div class="close-btn"><i class="fas fa-times"></i></div>
+                <div class="nav-logo">
+                    <a href="index.html"><img src="assets/img/logo/logo-blue.png" alt=""></a>
+                </div>
+                <div class="menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="menu-backdrop"></div>
+        <!-- End Mobile Menu -->
+
+        <!-- header-search -->
+        <div class="search-popup-wrap" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="search-wrap text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="search-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Enter your keyword...">
+                                    <button class="search-btn"><i class="flaticon-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-backdrop"></div>
+        <!-- header-search-end -->
+
+        <!-- offCanvas-start -->
+        <div class="offCanvas-wrap">
+            <div class="offCanvas-toggle"><img src="assets/img/icons/close.png" alt="icon"></div>
+            <div class="offCanvas-body">
+                <div class="offCanvas-content">
+                    <h5 class="title">Get all the products from <span>Amicis Industries</span> as needed.</h5>
+                    <p>Amicis-Industries specializes in animal health, providing high-quality
+                        vaccines and medicines to safeguard livestock and pets. Dedicated to
+                        innovation and care, Amics supports veterinarians and farmers with effective
+                        solutions for animal well-being and disease prevention.</p>
+                </div>
+                <div class="offcanvas-contact">
+                    <h6 class="number">+91 9363634505 </h6>
+                    <h6 class="email">SUPPORT@AMICISINDUSTRIES.COM,<br>
+                        AMICISINDUSTRIES@GMAIL.COM</h6>
+                    <p>NO.2/112, <br>BAZAAR STREET, <br>
+                        PONDICHERRY,INDIA-605 502.
+                    </p>
+                    <ul class="offcanvas-social list-wrap">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="offCanvas-overlay"></div>
+        <!-- offCanvas-end -->
+
+    </header>
+    <!-- header-area-end -->
+
+
+    <!-- main-area -->
+    <main class="main-area fix">
+
+
+
+        <!-- breadcrumb-area -->
+        <section class="breadcrumb-area breadcrumb-bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="breadcrumb-content text-center">
+                            <h2 class="title">About</h2>
+                            <nav aria-label="Breadcrumbs" class="breadcrumb-trail">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item trail-item trail-begin">
+                                        <a href="index.html"><span>Home</span></a>
+                                    </li>
+                                    <li class="breadcrumb-item trail-item trail-end"><span>About-us</span></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb-area-end -->
+        <!-----about-us overview-->
+        <section class="formula-area pb-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="ingredients-items-wrap">
+                            <div class="section-title mb-60">
+                                <h2 class="title text-center mt-5 mb-3">OVERVIEW</h2>
+                                <p class="text-center">Discover our mission, vision, sustainability initiatives, and
+                                    global reach, all aimed
+                                    at delivering
+                                    advanced chlorine dioxide solutions to meet your needs.</p>
+                            </div>
+                            <div class="row justify-content-center justify-content-lg-start">
+                                <div class="col-md-6 col-sm-8">
+                                    <div class="ingredients-item wow fadeInUp" data-wow-delay=".2s">
+                                        <div class="ingredients-thumb d-flex align-items-center justify-content-center">
+                                            <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <pattern id="img1" patternUnits="userSpaceOnUse" width="100"
+                                                        height="100">
+                                                        <image xlink:href="assets/img/water treatment/our-mission.png"
+                                                            x="-25" width="150" height="100" />
+                                                    </pattern>
+                                                </defs>
+                                                <polygon id="hex" points="50 1 95 25 95 75 50 99 5 75 5 25"
+                                                    fill="url(#img1)" />
+                                            </svg>
+                                        </div>
+                                        <div class="ingredients-content">
+                                            <h5 class="title">Our Mission</h5>
+                                            <p>Our mission is to deliver effective and environmentally friendly chlorine
+                                                dioxide solutions that help our customers achieve their goals while
+                                                promoting a cleaner and safer world.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-8">
+                                    <div class="ingredients-item wow fadeInUp" data-wow-delay=".3s">
+                                        <div class="ingredients-thumb d-flex align-items-center justify-content-center">
+                                            <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <pattern id="img2" patternUnits="userSpaceOnUse" width="100"
+                                                        height="100">
+                                                        <image xlink:href="assets/img/water treatment/our-vission.png"
+                                                            x="-25" width="150" height="100" />
+                                                    </pattern>
+                                                </defs>
+                                                <polygon id="hex" points="50 1 95 25 95 75 50 99 5 75 5 25"
+                                                    fill="url(#img2)" />
+                                            </svg>
+                                        </div>
+                                        <div class="ingredients-content">
+                                            <h5 class="title">Our Vision</h5>
+                                            <p>We envision a future where advanced chemical solutions like chlorine
+                                                dioxide play a pivotal role in addressing global challenges such as
+                                                water purification, industrial disinfection, and food safety, thereby
+                                                contributing to the well-being of communities worldwide.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-8">
+                                    <div class="ingredients-item wow fadeInUp" data-wow-delay=".4s">
+                                        <div class="ingredients-thumb d-flex align-items-center justify-content-center">
+                                            <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <pattern id="img3" patternUnits="userSpaceOnUse" width="100"
+                                                        height="100">
+                                                        <image xlink:href="assets/img/water treatment/global.png"
+                                                            x="-25" width="150" height="100" />
+                                                    </pattern>
+                                                </defs>
+                                                <polygon id="hex" points="50 1 95 25 95 75 50 99 5 75 5 25"
+                                                    fill="url(#img3)" />
+                                            </svg>
+                                        </div>
+                                        <div class="ingredients-content">
+                                            <h5 class="title">Our Initiatives</h5>
+                                            <p>We are committed to sustainability and continuously seek ways to reduce
+                                                our environmental impact. From responsible sourcing of raw materials to
+                                                implementing energy-efficient production processes, we are dedicated to
+                                                preserving the environment for future generations.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-8">
+                                    <div class="ingredients-item wow fadeInUp" data-wow-delay=".5s">
+                                        <div class="ingredients-thumb d-flex align-items-center justify-content-center">
+                                            <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <pattern id="img4" patternUnits="userSpaceOnUse" width="100"
+                                                        height="100">
+                                                        <image xlink:href="assets/img/water treatment/global-reach.png"
+                                                            x="-25" width="150" height="100" />
+                                                    </pattern>
+                                                </defs>
+                                                <polygon id="hex" points="50 1 95 25 95 75 50 99 5 75 5 25"
+                                                    fill="url(#img4)" />
+                                            </svg>
+                                        </div>
+                                        <div class="ingredients-content">
+                                            <h5 class="title">Global Reach</h5>
+                                            <p>With a robust distribution network, we serve customers across the globe,
+                                                providing reliable and timely delivery of our products. No matter where
+                                                you are, Amicis Industries is always your trusted partner for chlorine
+                                                dioxide solutions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!--------about-us overview end-------->
+    </main>
+    <!-- main-area-end -->
+
+
+    <!-- Footer-area -->
+    <footer class="footer-area">
+
+        <div class="footer-top-wrap">
+            <div class="container">
+                <div class="footer-widgets-wrap">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-7">
+                            <div class="footer-widget">
+                                <div class="footer-about">
+                                    <div class="footer-logo logo">
+                                        <a href="index.html"><img src="assets/img/logo/logo-white.png"
+                                                alt="Logo"></a>
+                                    </div>
+                                    <div class="footer-text">
+                                        <p>Our team of experienced engineers and project managers ensure we provide a
+                                            system that is exactly suited to your requirements. Scotmas has a continued
+                                            commitment to R&D and active partnerships with several academic
+                                            institutions. You can be assured that our ClO2 systems use the latest
+                                            technology on the market.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-5 col-sm-6">
+                            <div class="footer-widget footer_widget_support">
+                                <h4 class="fw-title">Support</h4>
+                                <ul class="list-wrap">
+                                    <li><a href="#">Knowledge Base</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="contact-water.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5">
+                            <div class="footer-widget">
+                                <h4 class="fw-title">CONTACT US</h4>
+                                <div class="footer-contact-wrap">
+                                    <p class="p-0 m-0">NO.2/112, Bazaar Street, <br>
+                                        Pondicherry,India-605 502.</p>
+                                    <ul class="list-wrap">
+                                        <li class="phone"><i class="fas fa-phone"></i> +91 9363634505 </li>
+                                        <li class="mail"><i class="fas fa-envelope"></i> support@amicisindustries.com
+                                        </li>
+                                        <li class="website"><i class="fas fa-globe"></i> amicisindustries@gmail.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="copyright-text text-center">
+                            <p>Copyright © 2024 Amicis-Industries All Rights Reserved.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer-area-end -->
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.paroller.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.min.js"></script>
+    <script src="assets/js/jquery.inview.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/svg-inject.min.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/validator.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        SVGInject(document.querySelectorAll("img.injectable"));
+    </script>
+</body>
+
+
+</html>
